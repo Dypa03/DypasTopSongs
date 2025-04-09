@@ -1,68 +1,251 @@
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-a:hover {
-  color: #535bf2;
-}
+
+
 
 body {
-  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.5;
+
+  white-space: pre-line;
+}
+
+/* Header */
+header {
+  color: var(--secondary-color);
+
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+
+  height: 48px;
+  opacity: 0.8;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.logo-link {
+  width: 60px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.icon {
+  width: 20px;
+  height: 20px
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+
+.navbar a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Intro */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 200px;
+
+  height: 100vh;
+  width: 100%;
+
+  background-image: url('/public/concert.png');
+  background-size: cover;
+
+}
+
+.intro h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.intro p {
+  width: 560px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* Entries */
+.entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 40px;
+}
+
+.entry-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 90%;
+  flex-wrap: wrap; /* allows wrapping if too narrow */
+}
+
+
+.entry-container img {
+  width: 100%;
+  height: auto;
+  max-width: 740px;
+  flex-shrink: 1; /* allows shrinking if needed */
+  border-radius: 10px;
+}
+
+
+.vertical-line {
+  width: 1px;
+  background-color: var(--secondary-color);
+  align-self: stretch; /* ✅ fills the vertical space of its flex parent */
+}
+
+
+
+/* Entry Text */
+.entry-text {
+  flex: 1;
+  min-width: 300px; 
+  max-width: 740px; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+.entry-text h2 {
+  font-size: 90px;
+}
+
+.entry-text h3 {
+  font-size: 24px;
+}
+
+.entry-year {
+  opacity: 0.7;
+}
+
+/* .album-name {
+  font-size: 20px;
+  font-weight: 600;
+} */
+
+.track-details {
+  margin-bottom: 40px;
+}
+
+.entry-description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.quote:first-letter {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--secondary-color);
+}
+
+/* Single entry styling */
+
+/* i-never-die entry */
+#i-never-die a {
+  color: rgb(255, 0, 76);
+}
+
+/* perm entry */
+#perm {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+#perm .vertical-line {
+  background-color: var(--primary-color);
+}
+
+#perm a {
+  color: #d6251f;
+}
+
+/* queencard entry */
+#queencard a {
+  color: #f4a4dc;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .entry-container {
+    flex-direction: column;
+    text-align: center;
   }
-  a:hover {
-    color: #747bff;
+
+  .vertical-line {
+    display: none;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .entry-text {
+    max-width: none;
+    align-items: center;
   }
 }

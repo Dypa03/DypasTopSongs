@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "dataId": "i-never-die",
+        "title": "Villain Dies",
+        "artist": "(G)I-DLE",
+        "album": "I Never Die",
+        "year": 2022,
+        
+        "cover": {
+            "src": "/songs/1-3.png",
+            "alt": "Villain Dies cover"
+        },
+        "songLink": "https://open.spotify.com/intl-it/track/5SQviGLr0oQArwwV44JAWD?si=466d5dece1624649",
+
+        "descriptionIntro": "The newest addition to my playlist—an underrated gem crafted by the brilliant Soyeon that more people need to discover.",
+        "description": "What immediately captured me was the beat—aggressive, dark, and incredibly powerful. This intense style alternates with a more melancholic and sorrowful tone, mirroring the emotional depth of the lyrics. The song offers a “Disney-style” villain's perspective: someone shunned not because they are evil, but because they were never given love or a chance. It's not the villain who chose to be hated—it's the world, the <<god or author>>, that decided their fate. It's a haunting reflection on how easy it is to project hate onto someone else.",
+        "descriptionOutro": "<<When will this crazy novel end? If the villain dies...>> \nBut I Never Die."
+    },
+    {
+        "id": 2,
+        "dataId": "perm",
+        "title": "Perm",
+        "artist": "Bruno Mars",
+        "album": "24K Magic",
+        "year": 2016,
+
+        "cover": {
+            "src": "/songs/2-2.png",
+            "alt": "Perm cover"
+        },
+        "songLink": "https://open.spotify.com/intl-it/track/1I6pKIyaBp4OebTGLJpCCC?si=8abf21c830be48be",
+
+        "descriptionIntro": "The pure essence of funk—a song that makes you want to dance, and makes you want to dance, AND MAKES YOU WANT TO DANCE.",
+        "description": "This song is pure MADNESS. Its catchiness is off the charts; the beat is so funky and groovy that you can't help but move your body. The guitar riff is irresistibly catchy and perfectly executed, the drums hit hard, and the horns, though simple, are incredibly effective. \nAnd then there are the delightfully silly and humorous lyrics. This song truly embodies the essence of a showman.",
+        "descriptionOutro": "<<It's my birthday! No it's not!>> \nBut with this song, every day feels like it."
+    },
+    {
+        "id": 3,
+        "dataId": "queencard",
+        "title": "Queencard",
+        "artist": "(G)I-DLE",
+        "album": "I Feel",
+        "year": 2023,
+
+        "cover": {
+            "src": "/songs/3.jpeg",
+            "alt": "Queencard cover"
+        },
+        "songLink": "https://open.spotify.com/intl-it/track/4uOBL4DDWWVx4RhYKlPbPC?si=3932ff8284954895",
+
+        "descriptionIntro": "Again another masterpiece by Soyeon, this time with a more playful and lighthearted vibe.",
+        "description": "Have I mentioned my love for funk and (G)I-DLE? This track is a seamless fusion of both. From the very first note, the bass lays down an infectious groove that’s impossible to resist. The rhythm section, with its crisp percussion and vibrant instrumentation, creates an upbeat and danceable atmosphere. Lyrically, it’s a bold anthem of self-confidence and empowerment, encouraging listeners to embrace their individuality and inner ‘Queencard’. While the theme of girl empowerment stands out—understandably so, considering Soyeon’s experience with appearance-based criticism in a society that often values looks over skill—I personally connect more with the music than the message, as this topic has become toxic from both perspectives in the West.",
+        "descriptionOutro": "<<I am a Queencard, you wanna be the Queencard?>> \nHeck yeah, I do!"
+    }
+   
+]
