@@ -4,22 +4,19 @@ import Entry from "./myComponents/Entry";
 import songsData from "./data/songsData.json";
 
 function fadeIn() {
-  document.querySelectorAll('.fade-in').forEach((element) => {
-      const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  entry.target.classList.add('in-view');
-                  return;
-              }
-              else {
-                  entry.target.classList.remove('in-view');
-              }
-          });
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              return;
+          } else {
+              entry.target.classList.remove('in-view');
+          }
       });
-
-      const allAnimatedElements = document.querySelectorAll('.fade-in');
-      allAnimatedElements.forEach((element) => observer.observe(element));
   });
+
+  const allAnimatedElements = document.querySelectorAll('.fade-in');
+  allAnimatedElements.forEach((element) => observer.observe(element));
 }
 
 export default function App() {
