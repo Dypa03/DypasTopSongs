@@ -92,7 +92,7 @@ main {
 
   text-align: center;
   padding-top: 60px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 
   height: 100vh;
   width: 100%;
@@ -122,6 +122,9 @@ main {
   align-items: center;
   width: 100%;
   padding: 100px 40px;
+  
+
+
 }
 
 .entry-container {
@@ -131,6 +134,7 @@ main {
   gap: 80px;
   width: 90%;
   flex-wrap: wrap; /* allows wrapping if too narrow */
+  opacity: 0;
 }
 
 
@@ -160,17 +164,18 @@ main {
   flex-direction: column;
 }
 
-
-.entry-text h2 {
+.entry-heading h2 {
   font-size: 90px;
+  line-height: 1;
 }
 
-.entry-text h3 {
+.entry-heading h3 {
   font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.entry-year {
-  opacity: 0.7;
+.track-details p {
+  opacity: 0.8;
 }
 
 /* .album-name {
@@ -179,7 +184,7 @@ main {
 } */
 
 .track-details {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .entry-description {
@@ -189,21 +194,21 @@ main {
 
 }
 
+.entry-description:last-child {
+  margin-bottom: 0;
+  line-height: 2;
+}
+
 .quote {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.quote:first-letter {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: var(--secondary-color);
-}
 
 /* Single entry styling */
 
 /* i-never-die entry */
-#i-never-die a {
+#villain-dies a {
   color: rgb(255, 0, 76);
 }
 
@@ -230,9 +235,24 @@ main {
 
 
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.fade-in {
+  opacity: 0;
+}
 
-
+.fade-in.in-view {
+  animation: fade-in 0.8s 0.2s ease-in-out forwards;
+}
 
 @media (max-width: 1200px) {
   .entry-container {

@@ -41,9 +41,11 @@ export default function Entry(props) {
 
     
 
+    
+
     return (
         <section className="entry" id={props.dataId}>
-            <div className="entry-container">
+            <div className="entry-container fade-in">
                 
                 <img 
                     src={props.cover.src} 
@@ -58,13 +60,13 @@ export default function Entry(props) {
                         <a href={props.songLink} target="_blank" rel="noopener noreferrer" className="entry-link" >
                             <h2 className="entry-title">{props.title}</h2>
                         </a>
-                        
+                        <h3 className="entry-artist">{props.artist}</h3>
+                    </div>    
                         <div className="track-details">
-                            <h3 className="entry-artist">{props.artist}</h3>
                             <p className="entry-year">{props.year}</p>
                             <p className="entry-album">Album: <span className="album-name">{props.album}</span></p>
                         </div>
-                    </div>
+                    
                     
                     <p className="entry-description">{props.descriptionIntro}</p>
                     <p className="entry-description">{props.description}</p>

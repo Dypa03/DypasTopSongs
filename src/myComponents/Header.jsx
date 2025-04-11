@@ -20,9 +20,9 @@ export default function Header() {
             <nav className="navbar">
                 <ul className="nav-list">
                     <li><a href="#intro">Intro</a></li>
-                    <li><a href="#first-song">1st Song</a></li>
-                    <li><a href="#second-song">2nd Song</a></li>
-                    <li><a href="#third-song">3rd Song</a></li>
+                    <li><a href="#villain-dies">1st Song</a></li>
+                    <li><a href="#perm">2nd Song</a></li>
+                    <li><a href="#queencard">3rd Song</a></li>
                     <li><a href="#conclusion">Outro</a></li>
                 </ul>
             </nav>
