@@ -1,7 +1,7 @@
 
 :root {
   --primary-color: #000000;
-  --secondary-color: #ffffff;
+  --secondary-color: #EEEEEE;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
 
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
 
   white-space: pre-line;
@@ -46,11 +46,10 @@ header {
   height: 20px
 }
 
-
 .navbar a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-size: 12px;
+  font-size: 0.75rem;
   letter-spacing: 1px;
 }
 
@@ -82,6 +81,27 @@ main {
   justify-content: center;
 }
 
+/* BackToTop Button */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+
+
+  border-radius: 50%; 
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#back-to-top:hover {
+  opacity: 1;
+}
+
 /* Intro */
 
 .intro {
@@ -92,27 +112,42 @@ main {
 
   text-align: center;
   padding-top: 60px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 
   height: 100vh;
   width: 100%;
 
-  background-image: url('/public/concert.png');
-  background-size: cover;
+/*   background-image: url('/public/concert.png');
+  background-size: cover; */
+}
 
+.intro-image {
+  width: 100%;
+  height: auto;
+
+  opacity: 0.9;
+  position: absolute;
+  top: 50px;
+  z-index: -1;
 }
 
 .intro h1 {
-  font-size: 36px;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
+.intro h4 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
 .intro p {
   width: 560px;
-  font-size: 14px;
+
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  text-shadow: #071662  0px 0px 5px;
 }
 
 /* Entries */
@@ -122,9 +157,6 @@ main {
   align-items: center;
   width: 100%;
   padding: 100px 40px;
-  
-
-
 }
 
 .entry-container {
@@ -133,6 +165,7 @@ main {
   justify-content: center;
   gap: 80px;
   width: 90%;
+  height: 100%;
   flex-wrap: wrap; /* allows wrapping if too narrow */
   opacity: 0;
 }
@@ -166,7 +199,7 @@ main {
 
 .entry-heading h2 {
   font-size: 90px;
-  line-height: 1;
+  font-weight: 700;
 }
 
 .entry-heading h3 {
@@ -176,6 +209,7 @@ main {
 
 .track-details p {
   opacity: 0.8;
+  line-height: 1.2;
 }
 
 /* .album-name {
@@ -216,6 +250,10 @@ main {
 #perm {
   background-color: #ffffff;
   color: var(--primary-color);
+}
+
+#perm img {
+  transform: scale(1.2);
 }
 
 #perm .vertical-line {
